@@ -40,7 +40,7 @@ export default function Biography(props) {
                             className="bio-universal"
                             id='bio-icon'
                             // This needs to be imported
-                            src={`src/assets/Biography/${data.icon}`}
+                            src={data.icon}
                             alt="calendar icon"
                             style={{ top: `${topOffset}px`, left: `${leftOffsetIcon}px` }}
                         />
