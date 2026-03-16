@@ -13,10 +13,10 @@ export default function Biography(props) {
 
     const BioData = [
         { icon: "/Biography/BirthIcon.png", header: "Date of Birth", info: formattedDate },
-        { icon: "/FemaleIcon.png", header: "Gender", info: props.gender },
-        { icon: "/PhoneIcon.png", header: "Contact Info.", info: props.phone_number },
-        { icon: "/PhoneIcon.png", header: "Emergency Contacts", info: props.emergency_contact },
-        { icon: "/InsuranceIcon.png", header: "Insurance Provider", info: props.insurance_type }
+        { icon: "/Biography/FemaleIcon.png", header: "Gender", info: props.gender },
+        { icon: "/Biography/PhoneIcon.png", header: "Contact Info.", info: props.phone_number },
+        { icon: "/Biography/PhoneIcon.png", header: "Emergency Contacts", info: props.emergency_contact },
+        { icon: "/Biography/InsuranceIcon.png", header: "Insurance Provider", info: props.insurance_type }
     ]
 
     return (
@@ -25,10 +25,8 @@ export default function Biography(props) {
             <div id='bio-show-more-background'></div>
             <div id='bio-show-more-text'>Show All Information</div>
 
-            {/* API call to populate fields - DELETE ANY HARDCODED INFO*/}
             <img id='bio-big-profile' className="bio-universal" src={props.profile_picture} alt="big-profile-pic" />
             <div id='bio-name' className="bio-universal">{props.name}</div>
-
 
             {BioData.map((data, i) => {
                 const topOffset = 429 + i * 66;
@@ -39,7 +37,6 @@ export default function Biography(props) {
                         <img
                             className="bio-universal"
                             id='bio-icon'
-                            // This needs to be imported
                             src={data.icon}
                             alt="calendar icon"
                             style={{ top: `${topOffset}px`, left: `${leftOffsetIcon}px` }}
@@ -57,11 +54,9 @@ export default function Biography(props) {
                             style={{ top: `${topOffset + 23}px`, left: `${leftOffsetText}px` }}
                         >
                             {data.info}
-
                         </div>
                     </section>
                 )
-
             })}
         </section>
     )

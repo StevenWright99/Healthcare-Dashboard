@@ -18,7 +18,6 @@ export default function Diagnostics(props) {
             <div id='chart-background'></div>
             <div id='chart-title' className="diagnosis-universal">Blood Pressure</div>
 
-
             {/* Temperature Background*/}
             <div id='temp-background' className="diagnosis-mini-backgrounds"></div>
 
@@ -26,18 +25,18 @@ export default function Diagnostics(props) {
             <div id='heart-background' className="diagnosis-mini-backgrounds"></div>
 
             {/* Heart Rate arrow */}
-            <img id='heartRate-arrow' className="diagnosis-universal" src="src/assets/Diagnostics/ArrowDown.svg" alt="small arrow" />
+            <img id='heartRate-arrow' className="diagnosis-universal" src="/Diagnostics/ArrowDown.svg" alt="small arrow" />
 
             <div id='diagnosis-footer-right' className="diagnosis-universal">Lower than Average</div>
 
             <div id='month-range' className="diagnosis-universal">Last 6 months</div>
-            <img id='month-range-arrow' className="diagnosis-universal" src="src/assets/Diagnostics/DropdownArrow.svg" alt="dropdown icon" />
+            <img id='month-range-arrow' className="diagnosis-universal" src="/Diagnostics/DropdownArrow.svg" alt="dropdown icon" />
 
             {/* Systolic */}
             <div id='pink-dot' className="diagnosis-universal"></div>
             <div id='systolic-text' className="diagnosis-universal">Systolic</div>
             <div id='systolic-number' className="diagnosis-universal">{props.diagnosis_history[0].blood_pressure.systolic.value}</div>
-            <img id='uppies' className="diagnosis-universal" src="src/assets/Diagnostics/ArrowUp.svg" alt="up arrow" />
+            <img id='uppies' className="diagnosis-universal" src="/Diagnostics/ArrowUp.svg" alt="up arrow" />
             <div id='systolic-average' className="diagnosis-universal">{props.diagnosis_history[0].blood_pressure.systolic.levels}</div>
 
             <div id='grey-divider' className="diagnosis-universal"></div>
@@ -46,7 +45,7 @@ export default function Diagnostics(props) {
             <div id='purple-dot' className="diagnosis-universal"></div>
             <div id='diastolic-text' className="diagnosis-universal">Diastolic</div>
             <div id='diastolic-number' className="diagnosis-universal">{props.diagnosis_history[0].blood_pressure.diastolic.value}</div>
-            <img id='downies' className="diagnosis-universal" src="src/assets/Diagnostics/ArrowDown.svg" alt="" />
+            <img id='downies' className="diagnosis-universal" src="/Diagnostics/ArrowDown.svg" alt="" />
             <div id='diastolic-average' className="diagnosis-universal">{props.diagnosis_history[0].blood_pressure.diastolic.levels}</div>
 
             {diagnosisData.map((sticker, i) => {
@@ -55,12 +54,10 @@ export default function Diagnostics(props) {
                     <section key={i}>
                         <img
                             className="diagnosis-universal"
-                            //   src/assets/Diagnostics/respiratory rate.svg
-                            src={`src/assets/Diagnostics/${sticker.icon}`}
+                            src={`/Diagnostics/${sticker.icon}`}
                             alt={`${sticker.icon} icon`}
                             style={{ position: "absolute", left: `${leftOffset}px`, top: '549px', width: '96px' }}
                         />
-                        {/* Give leftOffset relative to the icon and new top */}
                         <div
                             className="diagnosis-universal"
                             id='diagnosis-text'
@@ -83,10 +80,7 @@ export default function Diagnostics(props) {
                             {sticker.footer}
                         </div>
                     </section>
-
                 )
-
-
             })}
         </section>
     )

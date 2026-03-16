@@ -21,7 +21,7 @@ export default function LabResults(props){
                         <img 
                         className="lab-universal"
                         id='download-icon'
-                        src={`src/assets/Lab Results/downloadIcon.png`}
+                        src="/Lab Results/downloadIcon.png"
                         alt="download icon" 
                         style={{top: `${topOffset}px`, left:`${leftOffsetIcon}px`}}
                         />

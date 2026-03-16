@@ -18,19 +18,18 @@ export default function Patients() {
         <section>
             <div id="patients-background" className="patient-section"></div>
             <span id="patient-header" className="patient-section">Patients</span>
-            <img id="magnifying-glass" className="patient-section" src="src/assets/Patients/magnifying-glass.png" alt="search icon" />
+            <img id="magnifying-glass" className="patient-section" src="/Patients/magnifying-glass.png" alt="search icon" />
             <div id='highlighted-patient'></div>
             {/* Need to add fake scroll bar */}
             <div id='scroll-bar-long'></div>
             <div id='scroll-bar-short'></div>
-            {/* Special sauce that renders each new patient 80px below the one above */}
             {patientData.map((patient, i) => {
-                const topOffset = 215 + i * 80; // Starting top position + 80px spacing
+                const topOffset = 215 + i * 80;
                 return (
                     <section key={i}>
                         <img
                             className="patient-section"
-                            src={`src/assets/Patients/${patient.img}`}
+                            src={`/Patients/${patient.img}`}
                             alt={`${patient.name} profile pic`}
                             style={{ position: 'absolute', top: `${topOffset}px`, left: '38px', width: '48px' }}
                         />
@@ -50,7 +49,7 @@ export default function Patients() {
                         </span>
                         <img
                             className="patient-section"
-                            src="src/assets/Patients/horiz_dots.png"
+                            src="/Patients/horiz_dots.png"
                             alt="dots"
                             style={{ position: 'absolute', top: `${topOffset + 22}px`, left: '337px', width: '18px' }}
                         />
