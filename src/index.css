@@ -5,7 +5,7 @@ html {
 main{
   /* border: 2px solid red; */
   position: relative;
-  left: 500px;
+  left: 200px;
   top: 20px;
 }
 /* Seems to work without this */

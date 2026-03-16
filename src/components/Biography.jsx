@@ -12,11 +12,11 @@ export default function Biography(props) {
     });
 
     const BioData = [
-        { icon: "BirthIcon.png", header: "Date of Birth", info: formattedDate },
-        { icon: "FemaleIcon.png", header: "Gender", info: props.gender },
-        { icon: "PhoneIcon.png", header: "Contact Info.", info: props.phone_number },
-        { icon: "PhoneIcon.png", header: "Emergency Contacts", info: props.emergency_contact },
-        { icon: "InsuranceIcon.png", header: "Insurance Provider", info: props.insurance_type }
+        { icon: "/BirthIcon.png", header: "Date of Birth", info: formattedDate },
+        { icon: "/FemaleIcon.png", header: "Gender", info: props.gender },
+        { icon: "/PhoneIcon.png", header: "Contact Info.", info: props.phone_number },
+        { icon: "/PhoneIcon.png", header: "Emergency Contacts", info: props.emergency_contact },
+        { icon: "/InsuranceIcon.png", header: "Insurance Provider", info: props.insurance_type }
     ]
 
     return (
