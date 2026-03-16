@@ -1,0 +1,704 @@
+html {
+  background-color: #F6F7F8;
+  color: #072635;
+}
+main{
+  /* border: 2px solid red; */
+  position: relative;
+  left: 500px;
+  top: 20px;
+}
+/* Seems to work without this */
+/* main,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  position: static;
+  height: 100%;
+  width: 100%;
+} */
+
+/*Applies to all icons on navbar*/
+.navbar-icons {
+  position: absolute;
+  z-index: 10;
+}
+
+.navbar-text-bold {
+  font: normal normal bold 14px/19px Manrope;
+  position: absolute;
+  z-index: 10;
+}
+
+.navbar-text-normal {
+  font: normal normal normal 14px/19px Manrope;
+  position: absolute;
+  z-index: 10;
+}
+
+
+
+/*NAVBAR LEFT */
+.navbar {
+  background-color: #FFFFFF;
+  border-radius: 70px;
+  height: 72px;
+  width: 1564px;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 1;
+}
+
+#TechCare-logo {
+  width: 211px;
+  top: 30px;
+  left: 50px;
+}
+
+/*NAVBAR Middle Icons*/
+
+#navbar-middle-icons1 {
+  top: 46px;
+  left: 473px;
+  width: 16px;
+}
+
+#navbar-middle-icons2 {
+  top: 46px;
+  left: 617px;
+  width: 24px;
+}
+
+#navbar-middle-icons3 {
+  top: 46px;
+  left: 762px;
+  width: 15px;
+}
+
+#navbar-middle-icons4 {
+  top: 46px;
+  left: 889px;
+  width: 19px;
+}
+
+#navbar-middle-icons5 {
+  top: 46px;
+  left: 1017px;
+  width: 22px;
+}
+
+#patients-highlighted {
+  top: 34px;
+  left: 601px;
+  width: 122px;
+  height: 41px;
+  border-radius: 41px;
+  background-color: #01F0D0;
+  z-index: 9;
+}
+
+/*NAVBAR Middle Text*/
+p,
+hr {
+  margin: 0;
+  /*p and hr have a default margin, 
+  making text appear lower than it should
+  Setting margin to 0 fixes this issue*/
+}
+
+#navbar-text-1 {
+  top: 45px;
+  left: 498px;
+  width: 63px;
+}
+
+#navbar-text-2 {
+  top: 45px;
+  left: 649px;
+  width: 57px;
+}
+
+#navbar-text-3 {
+  top: 45px;
+  left: 785px;
+  width: 64px;
+}
+
+#navbar-text-4 {
+  top: 45px;
+  left: 916px;
+  width: 61px;
+}
+
+#navbar-text-5 {
+  top: 45px;
+  left: 1047px;
+  width: 89px;
+}
+
+/*NAVBAR RIGHT*/
+#header-doctor-image {
+  top: 32px;
+  left: 1309px;
+  width: 44px;
+}
+
+#doctor-title {
+  top: 35px;
+  left: 1361px;
+  width: 119px;
+}
+
+#doctor-role {
+  top: 54px;
+  left: 1361px;
+  color: #707070;
+  width: 200px;
+}
+
+hr {
+  position: absolute;
+  top: 32px;
+  left: 1502px;
+  width: 0px;
+  height: 44px;
+  z-index: 10;
+  color: #EDEDED;
+}
+
+#settings-icon {
+  top: 44px;
+  left: 1515px;
+  width: 19px;
+}
+
+#dots-icon {
+  top: 45px;
+  left: 1546px;
+  width: 4px;
+}
+
+/*PATIENTS*/
+#patients-background {
+  position: absolute;
+  top: 122px;
+  left: 18px;
+  width: 367px;
+  height: 1054px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+
+.patient-section {
+  position: absolute;
+  z-index: 10;
+}
+
+#patient-header {
+  top: 142px;
+  left: 38px;
+  width: 100px;
+  font: normal normal 800 24px/33px Manrope;
+}
+
+#magnifying-glass {
+  top: 150px;
+  left: 347px;
+  width: 18px;
+}
+
+#patient-profile-pic1 {
+  top: 215px;
+  left: 38px;
+  width: 48px;
+}
+
+/*Patient List*/
+#patient-name {
+  top: 218px;
+  left: 98px;
+  /* width: 97px; */
+  font: normal normal bold 14px/19px Manrope;
+}
+
+#patient-sex-and-age {
+  top: 241px;
+  left: 98px;
+  /* width: 66px; */
+  font: normal normal normal 14px/19px Manrope;
+  color: #707070;
+}
+
+#highlighted-patient {
+  position: absolute;
+  top: 439px;
+  left: 18px;
+  width: 353px;
+  z-index: 10;
+  height: 80px;
+  background-color: #D8FCF7;
+}
+
+#scroll-bar-long {
+  position: absolute;
+  z-index: 9;
+  top: 215px;
+  left: 375px;
+  width: 6px;
+  height: 941px;
+  background-color: #E3E4E6;
+  border-radius: 3px;
+}
+
+#scroll-bar-short {
+  position: absolute;
+  z-index: 10;
+  top: 215px;
+  left: 375px;
+  width: 6px;
+  height: 100px;
+  background-color: #072635;
+  border-radius: 3px;
+}
+
+/* DIAGNOSTICS */
+.diagnosis-universal {
+  position: absolute;
+  z-index: 10;
+}
+
+.diagnosis-mini-backgrounds {
+  position: absolute;
+  z-index: 2;
+  border-radius: 12px;
+}
+
+#diagnosis-background {
+  top: 122px;
+  left: 417px;
+  width: 766px;
+  height: 673px;
+  z-index: 1;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+}
+
+#chart-background {
+  position: absolute;
+  z-index: 2;
+  top: 215px;
+  left: 437px;
+  width: 726px;
+  height: 298px;
+  background-color: #F4F0FE;
+  border-radius: 12px;
+}
+
+#chart-title {
+  top: 231px;
+  left: 453px;
+  width: 132px;
+  font: normal normal bold 18px/24px Manrope;
+}
+
+#diagnosis-header {
+  top: 142px;
+  left: 437px;
+  width: 207px;
+  font: normal normal 800 24px/33px Manrope;
+  z-index: 10;
+}
+
+#month-range{
+  top: 236px;
+left: 772px;
+width: 92px;
+z-index: 10;
+font: normal normal normal 14px/19px Manrope;
+}
+
+#month-range-arrow{
+  top: 243px;
+left: 880px;
+width: 11px;
+height: 6px;
+z-index: 10;
+}
+
+#pink-dot{
+  top: 234px;
+left: 939px;
+width: 12px;
+height: 12px;
+border-radius: 50%;
+background-color: #E66FD2;
+border: 1px solid #FFFFFF;
+z-index:10;
+}
+#systolic-text{
+  top: 231px;
+left: 957px;
+width: 55px;
+z-index: 10;
+font: normal normal bold 14px/19px Manrope;
+}
+#systolic-number{
+  top: 258px;
+left: 939px;
+width: 38px;
+font: normal normal bold 22px/30px Manrope;
+}
+#uppies{
+  top: 303px;
+left: 939px;
+width: 10px;
+}
+#systolic-average{
+  top: 296px;
+left: 957px;
+width: 131px;
+font: normal normal normal 14px/19px Manrope;
+}
+#grey-divider{
+  top: 331px;
+left: 939px;
+width: 208px;
+height: 1px;
+background-color: #CBC8D4;
+}
+
+#purple-dot{
+  top: 351px;
+left: 939px;
+width: 12px;
+height: 12px;
+border-radius: 50%;
+background-color:#8C6FE6;
+border: 1px solid #FFFFFF;
+}
+#diastolic-text{
+top: 348px;
+left: 957px;
+width: 60px;
+font: normal normal bold 14px/19px Manrope;
+}
+#diastolic-number{
+top: 375px;
+left: 939px;
+width: 25px;
+font: normal normal bold 22px/30px Manrope;
+}
+#downies{
+top: 420px;
+left: 939px;
+width: 10px;
+}
+#diastolic-average{
+top: 413px;
+left: 957px;
+width: 127px;
+font: normal normal normal 14px/19px Manrope;
+}
+
+#resp-background {
+  top: 533px;
+  left: 437px;
+  width: 228px;
+  height: 242px;
+  z-index: 10;
+  background-color: #E0F3FA;
+}
+
+#temp-background {
+  top: 533px;
+  left: 686px;
+  width: 228px;
+  height: 242px;
+  z-index: 10;
+  background-color: #FFE6E9;
+}
+
+#heart-background {
+  top: 533px;
+  left: 935px;
+  width: 228px;
+  height: 242px;
+  z-index: 10;
+  background-color: #FFE6F1;
+}
+
+#diagnosis-text {
+  font: normal normal 500 16px/22px Manrope;
+  width: 130px;
+  /* color: blue; */
+}
+
+#diagnosis-info {
+  font: normal normal 800 30px/41px Manrope;
+  width: 120px;
+}
+
+#diagnosis-footer {
+  font: normal normal normal 14px/19px Manrope;
+  width: 150px;
+}
+
+#diagnosis-footer-right {
+  font: normal normal normal 14px/19px Manrope;
+  width: 150px;
+  left: 969px;
+  top: 740px;
+}
+
+#heartRate-arrow {
+  top: 747px;
+  left: 951px;
+  width: 10px;
+}
+
+/* DIAGNOSTIC LIST */
+#diagnostic-list-background {
+  position: absolute;
+  z-index: 1;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  top: 827px;
+  left: 417px;
+  width: 766px;
+  height: 349px;
+}
+
+#diagnostic-list-header {
+  top: 847px;
+  left: 437px;
+  width: 176px;
+  height: 33px;
+  font: normal normal 800 24px/33px Manrope;
+}
+
+#diagnostic-table-header-background {
+  top: 920px;
+  left: 437px;
+  width: 726px;
+  height: 48px;
+  background-color: #F6F7F8;
+  border-radius: 24px;
+}
+
+.diagnostic-table-header {
+  position: absolute;
+  font: normal normal bold 14px/19px Manrope;
+  z-index: 10;
+}
+
+#problem-header {
+  top: 935px;
+  left: 453px;
+  width: 150px;
+
+}
+
+#description-header {
+  top: 935px;
+  left: 686px;
+  width: 79px;
+  font: normal normal bold 14px/19px Manrope;
+}
+
+#status-header {
+  top: 935px;
+  left: 1050px;
+  width: 46px;
+  font: normal normal bold 14px/19px Manrope;
+}
+
+.diagnostic-list-universal {
+  position: absolute;
+  z-index: 10;
+  font: normal normal normal 14px/19px Manrope;
+}
+
+#diagnostic-list-description {
+  width: 330px;
+}
+
+#diagnostic-list-status {
+  width: 100px;
+}
+
+#diagnostic-list-divider {
+  width: 710px;
+  height: 2px;
+  background-color: #F6F7F8;
+  border-radius: 15px;
+  /* opacity: 0.3; */
+}
+
+
+
+#diag-bigBar {
+  position: absolute;
+  z-index: 10;
+  top: 978px;
+  left: 1157px;
+  width: 6px;
+  height: 178px;
+  background-color: #E3E4E6;
+  border-radius: 3px;
+}
+
+#diag-smallBar {
+  position: absolute;
+  z-index: 10;
+  top: 978px;
+  left: 1157px;
+  width: 6px;
+  height: 100px;
+  background-color: #072635;
+  border-radius: 3px;
+}
+
+/* BIOGRAPHY */
+.bio-universal {
+  position: absolute;
+  z-index: 10;
+}
+
+#bio-background {
+  position: absolute;
+  top: 108px;
+  left: 1216px;
+  width: 367px;
+  height: 740px;
+  z-index: 1;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+
+#bio-show-more-background {
+  position: absolute;
+  top: 775px;
+  left: 1289px;
+  width: 220px;
+  height: 41px;
+  z-index: 9;
+  background-color: #01F0D0;
+  border-radius: 41px;
+}
+
+#bio-show-more-text {
+  position: absolute;
+  top: 786px;
+  left: 1329px;
+  width: 140px;
+  font: normal normal bold 14px/19px Manrope;
+  z-index: 10;
+  width: 250px;
+}
+
+#bio-big-profile {
+  top: 140px;
+  left: 1299px;
+  width: 200px;
+}
+
+#bio-name {
+  top: 364px;
+  left: 1317px;
+  width: 300px;
+  font: normal normal 800 24px/33px Manrope;
+}
+
+#bio-icon {
+  width: 42px;
+}
+
+#bio-header {
+  font: normal normal 500 14px/19px Manrope;
+  width: 200px;
+}
+
+#bio-info {
+  font: normal normal bold 14px/19px Manrope;
+  width: 200px;
+}
+
+/* LAB RESULTS */
+#lab-results-background {
+  position: absolute;
+  z-index: 1;
+  top: 880px;
+  left: 1215px;
+  width: 367px;
+  height: 296px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+
+#lab-results-header {
+  position: absolute;
+  top: 900px;
+  left: 1235px;
+  width: 137px;
+  font: normal normal 800 24px/33px Manrope;
+  z-index: 10;
+}
+
+#hidden-div {
+  position: absolute;
+  top: 1200px;
+  left: 805px;
+  z-index: 10;
+  color: #F6F7F8;
+}
+
+#lab-bigBar {
+  position: absolute;
+  z-index: 10;
+  top: 949px;
+  left: 1556px;
+  width: 6px;
+  height: 207px;
+  background-color: #E3E4E6;
+  border-radius: 3px;
+}
+
+#lab-smallBar {
+  position: absolute;
+  z-index: 10;
+  top: 949px;
+  left: 1556px;
+  width: 6px;
+  height: 51px;
+  background-color: #072635;
+  border-radius: 3px;
+}
+
+.lab-universal {
+  position: absolute;
+  z-index: 10;
+}
+
+#download-icon {
+  width: 20px;
+}
+
+#lab-reports {
+  width: 150px;
+  font: normal normal normal 13px/18px Manrope;
+}
+
+#myChart{
+  position: absolute;
+  z-index: 9;
+  left: 453px;
+  top: 275px;
+  width: 465px;
+  height: 320px;
+  /* border: 1px solid burlywood; */
+  font: normal normal normal 12px/17px Manrope;
+
+}
